@@ -1,4 +1,6 @@
 ## -Diamonts-Kaggle-Competition-
+
+![](https://img.huffingtonpost.com/asset/5c8a48a1360000c81a6b466e.jpeg?ops=scalefit_630_noupscale)
 ______
 
 # 1. **Objective**.
