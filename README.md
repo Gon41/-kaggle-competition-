@@ -1,37 +1,33 @@
-## -kaggle-competition-
+## -Diamonts-Kaggle-Competition-
 ______
 
-# 1. **Objetivo**
+# 1. **Objective**.
 
-Obtener la predicción del precio de diamantes.
-Para ello tenemos el train.csv que debemos limpiar, investigar y entrenar un modelo predictivo. Para ello nos servimos del segundo archivo (predict.csv).
+With Machine Learning techniques to obtain the prediction of the diamond price.
+
+We have the train.csv that we must clean, investigate and from it train a predictive model trying to lower the score as low as possible. For this we use the second file (predict.csv).
 
 ----
-# 2. **Metodología**
+# 2. **Methodology
 
-## 2.1. Limpieza
+## 2.1. Cleanup
 
-No habia mucho que limpiar en el dataset, ya que no habia datos nulos ni duplicados. Revisando las columnas hay tres columnas categóricas que luego trataremos.
+There was not much to clean up in the dataset, since there was no null or duplicate data. Reviewing the columns there are three categorical columns that we will discuss later.
 
-Estudiando la correlación y fijándonos en la columna "price", las filas "carat","x","y" y "z" tienen mucha correlación con "price".
-De ellas vemos que entre "x","y" y "z" hay demasiada correlación, lo que nos indica que es probable que haya colinealidad
-Cómo "x" tiene mayor correlación con "price" decido dejarla y eliminar "y" y "z".
+Studying the correlation and looking at the "price" column, the rows "carat", "x", "y" and "z" are highly correlated with "price".
+From them we see that between "x", "y" and "z" there is too much correlation, which indicates that there is likely to be collinearity.
+As "x" has a higher correlation with "price" I decide to leave it and eliminate "y" and "z".
 
-Convierto las columnas categóricas en numéricas con el método 'dummy'.
+I convert the categorical columns to numerical with the 'dummy' method.
 
-## 2.2. Elección del modelo
+## 2.2. Choice of model
 
-He probado con los siguientes modelos:
+I have tried the following models:
 
     - LinearRegression()
     - DecisionTreeRegressor()
     - RandomForestRegressorr()
 
-De ellos cada uno me daba menor distorsión en el precio y queda en 600-700€ de diferencia.
+Each of them gave me less distortion in the price and the difference is 600-700€.
 
 ------
-
-
-# 3. Dificultades
-
-En clase hemos machacado mucho el tema y no ha sido complicadisimo, pero si que no llego a entender del todo cuando se aplica cada uno de los modelos o por qué se aplican.
