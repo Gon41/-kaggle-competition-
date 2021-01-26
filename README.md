@@ -10,7 +10,7 @@ With Machine Learning techniques to obtain the prediction of the diamond price.
 We have the train.csv that we must clean, investigate and from it train a predictive model trying to lower the score as low as possible. For this we use the second file (predict.csv).
 
 ----
-# 2. **Methodology
+# 2. **Methodology**
 
 ## 2.1. Cleanup
 
